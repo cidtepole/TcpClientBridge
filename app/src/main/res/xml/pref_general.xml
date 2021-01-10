@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:summary="Settings">
+    <android.support.v7.preference.PreferenceCategory android:title="@string/server">
+        <android.support.v7.preference.EditTextPreference
+            android:key="port"
+            android:title="@string/server_port"
+            android:summary="1234"
+            android:maxLength="5"
+            android:inputType="numberSigned"
+            android:defaultValue="1234" />
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory android:title="@string/serial_communication">
+        <android.support.v7.preference.ListPreference android:title="@string/baud_rate"
+            android:key="baudRate"
+            android:summary="9600"
+            android:defaultValue="9600"
+            android:entries="@array/BaudRate_listArray"
+            android:entryValues="@array/BaudRate_listValues" ></android.support.v7.preference.ListPreference>
+
+
+        <android.support.v7.preference.ListPreference android:title="@string/data_bits"
+            android:key="dataBits"
+            android:summary="8"
+            android:defaultValue="8"
+            android:entries="@array/DataBits_listArray"
+            android:entryValues="@array/DataBits_listValues"></android.support.v7.preference.ListPreference>
+
+        <android.support.v7.preference.ListPreference android:title="@string/parity"
+            android:key="parity"
+            android:summary="none"
+            android:defaultValue="0"
+            android:entries="@array/Parity_listArray"
+            android:entryValues="@array/Parity_listValues"></android.support.v7.preference.ListPreference>
+
+        <android.support.v7.preference.ListPreference android:title="@string/stop_bits"
+            android:key="stopBits"
+            android:summary="1"
+            android:defaultValue="1"
+            android:entries="@array/StopBits_listArray"
+            android:entryValues="@array/StopBits_listValues"></android.support.v7.preference.ListPreference>
+    </android.support.v7.preference.PreferenceCategory>
+
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="@string/select_ending">
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="prefCR"
+            android:title="\\r - CR(Carriage Return)"
+            android:defaultValue="false"/>
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="prefLF"
+            android:title="\\n - LF(Line Feed)"
+            android:defaultValue="false"/>
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="@string/log_file_format">
+        <android.support.v7.preference.ListPreference android:title="@string/file_format"
+            android:key="fileFormat"
+            android:summary=".txt"
+            android:defaultValue="logFile.txt"
+            android:entries="@array/FileFormat_listArray"
+            android:entryValues="@array/FileFormat_listValues"></android.support.v7.preference.ListPreference>
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="@string/system">
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="prefScreen"
+            android:title="@string/keep_screen_on"
+            android:defaultValue="false"/>
+
+        <android.support.v7.preference.ListPreference android:title="@string/text_size"
+            android:key="textSize"
+            android:summary="18"
+            android:defaultValue="18"
+            android:entries="@array/TextSize_listArray"
+            android:entryValues="@array/TextSize_listValues" ></android.support.v7.preference.ListPreference>
+
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="numOfBubbles"
+            android:title="@string/number_bubble"
+            android:summary="1000"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:defaultValue="1000" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="numOfLines"
+            android:title="@string/number_lines"
+            android:summary="1000"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:defaultValue="1000" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+
+
+</android.support.v7.preference.PreferenceScreen>

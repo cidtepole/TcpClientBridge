@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cidtepole.tcpclientbridge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ServersActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTask"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MainService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.cidtepole.tcpclientbridge"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

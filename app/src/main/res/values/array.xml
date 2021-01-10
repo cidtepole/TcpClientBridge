@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BaudRate_listArray">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>28800</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>
+    <string-array name="BaudRate_listValues">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>28800</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>-array>
+
+
+    <string-array name="DataBits_listArray">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="DataBits_listValues">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="Parity_listArray">
+        <item>none</item>
+        <item>even</item>
+        <item>odd</item>
+        <item>mark</item>
+        <item>space</item>
+    </string-array>
+    <string-array name="Parity_listValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="StopBits_listArray">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="StopBits_listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="FileFormat_listArray">
+        <item>.txt</item>
+        <item>.csv</item>
+    </string-array>
+    <string-array name="FileFormat_listValues">
+        <item>logFile.txt</item>
+        <item>logFile.csv</item>
+    </string-array>
+
+    <string-array name="TextSize_listArray">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="TextSize_listValues">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </string-array>-array>
+
+
+</resources>

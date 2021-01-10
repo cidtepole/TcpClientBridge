@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="@dimen/child_margin_top"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="@dimen/child_margin_top"
+        />
+
+
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_value"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_value"
+        android:layout_alignParentLeft="true"
+        android:text="Save"
+        android:layout_marginTop="@dimen/button_margin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <Button
+        android:id="@+id/btn_cancel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_value"
+        android:text="Cancel"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/button_margin"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+
+
+
+</RelativeLayout>

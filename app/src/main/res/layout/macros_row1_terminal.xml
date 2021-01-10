@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/macros_row1_term"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_m1_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/borde_redondo"
+        android:text="m1"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <Button
+        android:id="@+id/btn_m2_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/borde_redondo"
+        android:text="m2"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <Button
+        android:id="@+id/btn_m3_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/borde_redondo"
+        android:text="m3"
+        android:textColor="@color/cardview_light_background"
+        />
+
+    <Button
+        android:id="@+id/btn_m4_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/borde_redondo"
+        android:text="m4"
+        android:textColor="@color/cardview_light_background"
+        />
+</LinearLayout>

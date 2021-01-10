@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listview_term"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:transcriptMode="normal">
+
+        </ListView>
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="empty list"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:id="@+id/input_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/macros_row3_terminal"/>
+        <include layout="@layout/macros_row2_terminal"/>
+        <include layout="@layout/macros_row1_terminal"/>
+
+    <LinearLayout
+        android:id="@+id/input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/lyt_thread"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="2dp"
+            android:layout_marginLeft="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/text_content_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:layout_weight="2"
+                android:hint="type message.."
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_terminal_Ascii"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:textColor="@color/grey_hard"
+                android:text="ASCII" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_send_term"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_send"
+            android:contentDescription="Send" />
+
+
+     </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/lyt_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:background="@color/grey_bg"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/unknown_avatar" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ip_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sample"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#424242"
+                    android:textStyle="normal|bold" />
+
+
+            <TextView
+                android:id="@+id/tv_port_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#424242"
+                android:textStyle="normal|bold" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ib_close"
+                style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/grey_bg"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

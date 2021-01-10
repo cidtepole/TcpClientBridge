@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:id="@+id/lyt_view_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/circle_bg_white"
+                    android:clickable="false"
+                    android:padding="@dimen/spacing_medium"
+                    android:src="@drawable/unknown_avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameClient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                          <TextView
+                            android:id="@+id/ipClient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="192.1.3.4"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey_soft" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bt_set_name"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SET NAME" />
+
+                       <Button
+                        android:id="@+id/bt_desc"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disconnect_2" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey_soft" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <CheckBox
+                    android:id="@+id/checkBox_DisableBridge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_bridge" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_EnableCMD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_commands" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

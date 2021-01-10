@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">TcpClientBridgeX</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="summary">Summary</string>
+    <string name="terminal">Terminal</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_delete_summ">Clear screen summary</string>
+    <string name="action_delete_term">Clear screen terminal</string>
+    <string name="action_send_logFile_summ">Send summary log file</string>
+    <string name="action_send_logFile_term">Send Terminal log file</string>
+    <string name="action_show_ip">Show IP address</string>
+    <string name="action_help">Help</string>
+
+    <string name="title_activity_settings">Settings </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="server_port">Server Port</string>
+    <string name="serial_communication">SERIAL COMMUNICATION</string>
+    <string name="baud_rate">Baud Rate</string>
+    <string name="data_bits">Data Bits</string>
+    <string name="parity">Parity</string>
+    <string name="stop_bits">Stop Bits</string>
+    <string name="system">SYSTEM</string>
+    <string name="keep_screen_on">Keep screen On</string>
+    <string name="text_size">Text size in Terminal</string>
+
+    <string name="select_ending">ENDING FOR SEND DATA</string>
+
+    <string name="usb_ready">USB Ready</string>
+    <string name="usb_permission_not_granted">USB Permission not granted</string>
+    <string name="no_usb_connected">No USB connected</string>
+    <string name="usb_disconnected">USB disconnected</string>
+    <string name="usb_device_not_supported">USB device not supported</string>
+    <string name="Do_you_want_to_stop_the_server">Do you want to stop the server?</string>
+    <string name="Do_you_want_to_clear_the_summary_screen">Do you want to clear the summary screen?</string>
+    <string name="Do_you_want_to_clear_the_terminal_screen">Do you want to clear the terminal sreen?</string>
+    <string name="Do_you_want_to_disconnect_the_client">Do you want to disconnect the client?</string>
+
+
+
+
+
+    <string name="internet_connection">Internet Connection</string>
+    <string name="without_connection">Your Device does not have Internet Connection.</string>
+
+    <string name="start_server">Start Server</string>
+    <string name="stop_server">Stop Server</string>
+
+    <string name="server">SERVER</string>
+    <string name="clients">CLIENTS</string>
+
+    <string name="server_run">The server is running in the address </string>
+    <string name="server_stop">Server stopped.</string>
+    <string name="client">Client </string>
+    <string name="connect"> has connected.</string>
+    <string name="disconnect"> has disconnected.</string>
+    <string name="disconnect_2">Disconnect</string>
+
+    <string name="change_name1">Client </string>
+    <string name="change_name2"> name change.</string>
+    <string name="exit">Do you want to exit?</string>
+    <string name="cancel">cancel</string>
+
+    <string name="enable_bridge">Check to disable bridge to serial device.</string>
+    <string name="enable_commands">Check to enable commands.</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_text">Enter text here..</string>
+
+    <string name="log_file_format">LOG FILE FORMAT</string>
+    <string name="file_format">File Format</string>
+
+    <string name="warning">WARNING!</string>
+    <string name="busy_port">The port is occupied by another program.</string>
+    <string name="sent_messages_to">Send messages to:</string>
+    <string name="disconnect_client">Disconnect Client</string>
+
+
+    <string name="usb_device">Usb Device</string>
+
+    <string name="ip_address">IP address:</string>
+
+    <string name="server_running">Server running.</string>
+
+    <string name="number_bubble">Number of bubbles in the Summary Scroll</string>
+    <string name="number_lines">Number of lines in the Terminal Scroll</string>
+
+    <string name="options_client">Options Client</string>
+    <string name="client_settings">Client settings</string>
+    <string name="new_name">Enter a new name</string>
+
+    <string name="connected_clients">Connected clients:</string>
+    <string name="clients_not_connected">Clients not connected.</string>
+
+    <string name="instructions">INSTRUCTIONS:</string>
+
+
+    <string name="help_message">
+
+
+1)\t\t\tCreate a TCP Server by pressing the button \"PLAY\" using the default device IP
+   and port number.\n\n
+
+   •  If you want to start the server with a different port:\n\n
+
+    Step 1: Click the  button  on the upper right corner (more icon).\n
+    Step 2: Click the Settings menu.\n
+    Step 3: Click on the \"port number\" option.\n
+    Step 4: Enter in the text field, the port number.\n
+    Step 5: Click OK.\n\n\n
+
+2)\t\t\tUse an OTG cable to connect a USB device to your phone or tablet.\n\n
+   The phone or tablet detects the device connected to the USB and asks if you want to run it.\n\n
+
+    •  Before connecting a device, you can configure serial communication by entering the menu
+    section of SERIAL COMMUNICATION.\n
+    •  The server continues running without the connection of a USB device.\n
+    •  Also, you can communicate with your USB device without running the server.\n\n\n
+
+3)\t\t\tThen use  programs or applications of Telnet Client Terminal to connect to the server.
+   So you can communicate with your device or other clients.\n\n
+      •  The data flow is displayed on the SUMMARY panel.\n
+      •  The TERMINAL panel is separated to send and receive data from the USB device.\n\n\n
+
+SERVER COMMANDS:\n\n
+Send special text strings from client to server to specify orders.\n\n
+
+Before, you have to enable the sending of commands in the client options.
+The client options are found by clicking on the item in the client list located in the toolbar.\n\n
+
+\"&lt;TS&gt;\"\n
+Check the connection to the server responding with the sequence \"OK\".\n\n
+
+\"&lt;SN&gt; &lt;[parameter]/&gt;\"\n
+Set name to client. \n
+Example: &lt;SN&gt;&lt;John/&gt;. The client will be referenced with the name John.
+If set correctly the server responds with the sequence \"OK\".\n\n
+
+\"&lt;LC&gt;\"\n
+Returns the list of client names connected to the server in the following format:\n
+&lt;LC&gt; &lt;client1&gt; &lt;client2&gt; ... &lt;clientN&gt; &lt;/LC&gt;\n\n
+
+\"&lt;UC&gt;&lt;[parameter]/&gt;[text sequence]\"\n
+The text sequence is addressed to the client indicated in the parameter space. No response.\n
+Example: &lt;UC&gt;&lt;Paul/&gt;Hello John!\n
+The text string will be send \"Hello John!\" to the client with the name \"Paul\".\n\n
+
+
+\"&lt;BC&gt;&lt;[text sequence]&gt;\"\n
+The text string will be send to all clients connected to the server.\n
+Example: &lt;BC&gt; Hello!\n
+The text string \"Hello!\" will be send to all clients.\n\n
+
+     </string>
+    <string name="help_ok">OK</string>
+    <string name="contact">Contact</string>
+    <string name="contact_messaje">E-mail: cidtepole@gmail.com</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_client">ClientActivity</string>
+    <string name="title_activity_help_">HelpActivity</string>
+
+</resources>
